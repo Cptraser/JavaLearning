@@ -14,7 +14,7 @@ class Catalogue{
 /**
  * @author SwordFlame
  */
-public class csp20201203 {
+public class Csp20201203 {
     public static int n, cnt = 0;
     static final String N = "N";
     static final String Y = "Y";
@@ -197,4 +197,6 @@ public class csp20201203 {
         node[nw].ld = ld;
         return Y;
     }
+    public static boolean check(int x, int y){ return x>y; }
+
 }

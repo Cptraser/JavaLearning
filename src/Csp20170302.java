@@ -4,10 +4,10 @@ import java.util.*;
  * @author SwordFlame
  */
 public class Csp20170302 {
+    public static int[] id = new int[1005], a = new int[1005];
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         int n = reader.nextInt(), m = reader.nextInt();
-        int[] id = new int[n+5], a = new int[n+5];
         for (int i=1; i<=n; ++i){ id[i] = i; a[i] = i; }
         while ((m--) > 0){
             int x = reader.nextInt(), y = reader.nextInt(), pre;

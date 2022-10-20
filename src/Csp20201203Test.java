@@ -2,7 +2,7 @@
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class csp20201203Test {
+class Csp20201203Test {
 
     @org.junit.jupiter.api.Test
     void main() {

@@ -32,12 +32,13 @@ class Battlefield{
         side[position] = new Servant(atk, hp);
         cnt = cnt + 1;
     }
-    public void del(int position){
+    public boolean del(int position){
         position = position - 1;
         for (int i = position; i < cnt - 1; ++i){
             side[i] = side[i+1];
         }
         cnt = cnt - 1;
+        return true;
     }
     public void check(int position){
         if (side[position].hp <= 0) {

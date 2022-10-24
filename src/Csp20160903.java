@@ -1,5 +1,5 @@
+import org.apache.log4j.Logger;
 import java.util.*;
-
 
 /**
  * @author SwordFlame
@@ -14,6 +14,7 @@ class Servant{
  * @author SwordFlame
  */
 class Battlefield{
+    private static final Logger logger = Logger.getLogger(BattlefieldTest.class);
     Servant[] side;
     final static int BATTLEFIELD_WIDE = 7;
     int cnt;
@@ -34,8 +35,12 @@ class Battlefield{
     }
     public boolean del(int position){
         position = position - 1;
-        for (int i = position; i < cnt - 1; ++i){
-            side[i] = side[i+1];
+        try {
+            for (int i = position; i < cnt - 1; ++i){
+                side[i] = side[i+1];
+            }
+        }catch (ArrayIndexOutOfBoundsException e){
+            logger.debug("Runtime Error");
         }
         cnt = cnt - 1;
         return true;

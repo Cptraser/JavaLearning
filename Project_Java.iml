@@ -65,5 +65,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="log4j-1.2.17" level="project" />
+    <orderEntry type="library" name="li" level="project" />
   </component>
 </module>
